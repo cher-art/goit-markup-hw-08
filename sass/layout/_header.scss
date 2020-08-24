@@ -1,0 +1,129 @@
+.page-header {
+  border-bottom: 1px solid $accent-link-color;
+}
+
+.main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.menu-button {
+  .icon-close {
+    display: none;
+  }
+  &.is-open .icon-close {
+    display: block;
+  }
+  &.is-open .icon-burger {
+    display: none;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+// .menu-button .icon-close {
+//   display: none;
+// }
+
+// .menu-button.is-open .icon-close {
+//   display: block;
+// }
+
+// .menu-button.is-open .icon-burger {
+//   display: none;
+// }
+
+@media screen and (max-width: 767px) {
+  .menu-wrapper {
+    display: none;
+    position: absolute;
+    align-items: center;
+    background-color: $plain-text-color;
+    width: 100%;
+    top: 101%;
+    left: 0;
+    padding: 60px 0;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    text-align: center;
+  }
+  .site-nav .item:not(:last-child) {
+    padding-bottom: 40px;
+  }
+}
+
+.site-nav .item:last-child {
+  padding-bottom: 60px;
+}
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+.auth-nav {
+  justify-items: center;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.auth-nav .link-svg {
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav .item {
+    display: flex;
+    justify-content: center;
+  }
+  .auth-nav .item:first-child {
+    padding-bottom: 16px;
+  }
+}
+
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  text-decoration: none;
+  color: #757575;
+  fill: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  fill: #2196f3;
+  color: #2196f3;
+}

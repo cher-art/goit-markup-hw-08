@@ -1,0 +1,24 @@
+.logo {
+  display: block;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: $primery-text-color;
+}
+
+.logo-footer {
+  font-family: $secondary-font;
+  text-decoration: none;
+  color: $plain-text-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+
+.color-text {
+  color: $accent-text-color;
+}

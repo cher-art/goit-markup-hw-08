@@ -16,14 +16,16 @@
 }
 
 .hero-section {
-  padding: 118px 60px;
+  padding: 118px 0;
   max-width: 696px;
 }
 
 .hero .title {
   text-transform: uppercase;
   font-weight: 900;
+  width: 360px;
   font-size: 26px;
+  
   line-height: 1.615;
   color: $plain-text-color;
 }
@@ -44,4 +46,17 @@
   text-align: center;
 
   /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+@media screen and (min-width: 1199px){
+  .hero{
+    .title{
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.39;
+      color: $plain-text-color;
+      width: 100%;
+    }
+  }
 }

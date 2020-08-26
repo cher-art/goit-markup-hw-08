@@ -21,9 +21,9 @@
 
         <button
           type="button"
-          class="menu-button is-open"
+          class="menu-button"
           data-menu-button
-          aria-expanded="true"
+          aria-expanded="false"
           aria-label="переключатель мобильного меню"
         >
           <svg style="width: 40px; height: 40px;">
@@ -31,12 +31,12 @@
             <use class="icon-close" href="./images/sprite.svg#cross"></use>
           </svg>
         </button>
-        <div class="menu-wrapper is-open"
+        <div class="menu-wrapper"
         data-menu>
           <nav class="main-nav">
             <ul class="site-nav">
               <li class="item">
-                <a href="./index.html" class="current link">Студия</a>
+                <a href="./index.html" class=" link current">Студия</a>
               </li>
               <li class="item">
                 <a href="./portfolio.html" class="link">Портфолио</a>
@@ -48,7 +48,7 @@
           <ul class="auth-nav">
             <li class="item">
               <a href="" class="link">
-                <svg class="link-svg mail" style="width: 18px; height: 18px;">
+                <svg class="link-svg mail" style="width: 14px; height: 10px;">
                   <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>
 
@@ -57,7 +57,7 @@
             </li>
             <li class="item">
               <a href="" class="link">
-                <svg class="link-svg phone" style="width: 18px; height: 18px;">
+                <svg class="link-svg phone" style="width: 10px; height: 14px;">
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
                 <p>+38 096 111 11 11</p>
@@ -79,8 +79,7 @@
         </div>
       </section>
       <!-- ПРИЕМУЩЕСТВА -->
-      <!-- <section class="advantages">
-        <div class="container">
+      <section class="advantages container">
           <h2 class="invisible">Преимущества</h2>
           <ul class="list">
             <li class="item">
@@ -132,10 +131,9 @@
               </p>
             </li>
           </ul>
-        </div>
-      </section> -->
+      </section>
       <!-- О НАС -->
-      <!-- <section class="about-us section container">
+      <section class="about-us section container">
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="list">
           <li class="item">
@@ -166,9 +164,9 @@
             <h3 class="work">Дизайнерские решения</h3>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- НАША КОМАНДА -->
-      <!-- <section class="our-team section">
+      <section class="our-team section">
         <div class="container our-team-container">
           <h2 class="title">Наша команда</h2>
           <ul class="list">
@@ -177,8 +175,6 @@
                 <img
                   src="./our-team/images/our_team_img_1.jpg"
                   alt=""
-                  width="270"
-                  height="260"
                 />
                 <h3 class="person">Игорь Демьяненко</h3>
                 <p class="profession">Product Designer</p>
@@ -219,8 +215,7 @@
                 <img
                   src="./our-team/images/our_team_img_2.jpg"
                   alt=""
-                  width="270"
-                  height="260"
+                 
                 />
                 <h3 class="person">Ольга Репина</h3>
                 <p class="profession">Frontend Developer</p>
@@ -261,8 +256,6 @@
                 <img
                   src="./our-team/images/our_team_img_3.jpg"
                   alt=""
-                  width="270"
-                  height="260"
                 />
                 <h3 class="person">Николай Тарасов</h3>
                 <p class="profession">Marketing</p>
@@ -303,8 +296,6 @@
                 <img
                   src="./our-team/images/our_team_img_4.jpg"
                   alt=""
-                  width="270"
-                  height="260"
                 />
                 <h3 class="person">Михаил Ермаков</h3>
                 <p class="profession">UI Designer</p>
@@ -342,10 +333,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- КЛИЕНТЫ -->
-      <!-- <section class="clients section container">
-        <h2 class="title">Постоянные клиенты</h2>
+      <section class="clients section">
+        <div class="container">
+          <h2 class="title">Постоянные клиенты</h2>
         <ul class="list">
           <li class="item">
             <a class="link" href="">
@@ -391,55 +383,60 @@
           </li>
         </ul>
       </section>
+        </div>
+        
     </main>
 
     <footer class="page-footer">
       <div class="container flex">
-        <div class="main-footer">
-          <a href="" class="logo-footer">
-            <span class="color-text">Web</span>Studio</a
-          >
-          <p class="title">г. Киев, пр-т Леси Украинки, 26</p>
-          <p class="title-link">info@example.com</p>
-          <p class="title-link">+38 099 111 11 11</p>
-        </div>
+        <div class="tablet-footer">
+          <div class="main-footer">
+            <a href="" class="logo-footer">
+              <span class="color-text">Web</span>Studio</a
+            >
+            <p class="title">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="title-link">info@example.com</p>
+            <p class="title-link">+38 099 111 11 11</p>
+          </div>
 
-        <div class="join-footer">
-          <p class="join">ПРИСОЕДИНЯЙТЕСЬ</p>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-svg">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-svg">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-svg">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link">
-                <svg class="social-svg">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="join-footer">
+            <p class="join">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-svg">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-svg">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-svg">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-svg">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        
 
         <div class="subscribe-footer">
-          <p class="join">Подпишитесь на рассылку</p>
+          <p class="join sybscribe-join">Подпишитесь на рассылку</p>
           <form class="subscribe-footer-form">
             <input
               type="text"
@@ -456,7 +453,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- МОДАЛЬНОЕ ОКНО -->
     <!-- <div class="modal is-hidden" data-modal>
       <div class="form-wrapper">
@@ -538,7 +535,8 @@
         </div>
       </div>
     </div> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
-  <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  
 </html>

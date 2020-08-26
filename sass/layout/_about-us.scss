@@ -1,0 +1,52 @@
+.about-us{
+  display: none;
+}
+
+@media screen and (min-width: 1199px){
+  .about-us {
+    display: block;
+
+
+    .title {
+      margin-top: 0;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 36px;
+      line-height: 1.166;
+
+    }
+  
+    .list {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .item {
+      position: relative;
+      display: flex;
+  
+      + .item {
+        margin-left: 30px;
+      }
+    }
+  
+    .work {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 70px;
+      align-items: center;
+      justify-content: center;
+  
+      color: $plain-text-color;
+      background: rgba(47, 48, 58, 0.8);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      
+    }
+  }
+}

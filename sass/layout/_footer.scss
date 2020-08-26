@@ -290,7 +290,11 @@
 
     .subscribe-footer{
       display:block;
-      margin-top: 0;
+      margin-top: 0; 
+      align-content: center;
+      justify-content: center;
+      flex-flow: column;
+      text-align: start;
     }
   }
   
@@ -313,6 +317,7 @@
   
   .page-footer .main-footer {
     margin-right: 70px;
+    text-align: start;
   }
   
   .page-footer .join-footer {
